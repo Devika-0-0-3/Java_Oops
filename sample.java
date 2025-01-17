@@ -27,10 +27,18 @@ class Student{
     }
     //constructor for Student class
     //non-parametrized constructor
+    /* non parametrized constructor
     Student(){
         System.out.println("Constructor called");
     }
+        */
+    //even if it is not written java bydefault makes a constructor and calls it
 
+    Student(String name,int age){
+      //object name 
+        this.name=name; //parameter name
+        this.age=age;
+    }
 }
 
 
@@ -51,19 +59,22 @@ public class sample {
         pen2.printColor();
         pen1.printColor();
 
-        Student s1=new Student(); //Student constructor defined above so when object is created it prints whatever in Student constructor
+        //Student s1=new Student(); 
+       //Student constructor defined above so when object is created it prints whatever in Student constructor
         //new keyword -->memory heap one space is allocated and there these objects get stored there
         //Student() these are constructors, they construct object
-        //3 constructors-->non-parametrized, 
+        //3 constructors-->non-parametrized, parametrized constructor, 
         /*Properties of constructors:
         Classname and constructor name ssame
         They dont return anything and they dont have any return type ,they only construct object
         Constructors can be called once when it is created
         */
 
-        s1.name="Devika";
-        s1.age=40;
-        s1.printInfo();
+       // s1.name="Devika";
+       // s1.age=40;
+       //parametrized:
+        Student s2=new Student("Anu",45);
+        s2.printInfo();
 
 
     }
