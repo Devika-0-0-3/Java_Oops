@@ -1,4 +1,5 @@
-//overriding here area of triangle overrides area in shape
+//overload here area of triangle overloads area in shape
+
 class Shape{
     public void area(){
         System.out.println("Displays area");
