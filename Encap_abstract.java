@@ -33,7 +33,7 @@ class Chicken extends Animal{
     }
 }
 
-public class Encap {
+public class Encap_abstract{
     public static void main(String arg[]){
         Horse h1=new Horse();
         h1.walk();
