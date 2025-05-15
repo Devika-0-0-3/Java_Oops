@@ -21,10 +21,11 @@ class Account{
 
     //getters
     public String getPassword(){
+        setPassword("randomPass");
         return this.password;
     }
     //setters
-    public void setPassword(String pass){
+    private void setPassword(String pass){
         this.password=pass;
     
     }
@@ -37,7 +38,7 @@ public class Bank {
         a1.age=22;
         a1.place="PTA";
         //a1.password="hihi"; not possible as it is private
-        a1.setPassword("heyhi");
+        //a1.setPassword("heyhi");
         System.out.println(a1.getPassword());
     }
     
